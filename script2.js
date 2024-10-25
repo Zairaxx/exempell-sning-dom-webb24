@@ -4,10 +4,18 @@ let button = document.querySelectorAll("button");
 button.forEach( btn => {
 
     btn.addEventListener("click", (event) => {
-        console.log(event.target.parentElement);
+        //Parent till det klickade elementet
+        // console.log(event.target.parentElement);
 
-        let box = event.target.nextElementSibling;
-        box.nextElementSibling.style.background = "pink";
+        //Nästa sibling
+        // console.log(event.target.nextElementSibling);
+
+        //Föregående sibling
+        // console.log(event.target.previousElementSibling);
+        
+
+        let box = event.target.parentElement;
+        box.style.background = "pink";
         
     })
 
